@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69C037F91318DE7B004939D7 /* libunittest++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C037D91318DDE2004939D7 /* libunittest++.a */; };
+		69C038481318E2AA004939D7 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038471318E2AA004939D7 /* game.cpp */; };
+		69C0384C1318E2C1004939D7 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C0384A1318E2C1004939D7 /* Main.cpp */; };
+		69C038651318E30B004939D7 /* AssertException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038561318E30B004939D7 /* AssertException.cpp */; };
+		69C038661318E30B004939D7 /* Checks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038571318E30B004939D7 /* Checks.cpp */; };
+		69C038671318E30B004939D7 /* DeferredTestReporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038581318E30B004939D7 /* DeferredTestReporter.cpp */; };
+		69C038681318E30B004939D7 /* DeferredTestResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038591318E30B004939D7 /* DeferredTestResult.cpp */; };
+		69C038691318E30B004939D7 /* MemoryOutStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C0385A1318E30B004939D7 /* MemoryOutStream.cpp */; };
+		69C0386A1318E30B004939D7 /* ReportAssert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C0385B1318E30B004939D7 /* ReportAssert.cpp */; };
+		69C0386B1318E30B004939D7 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C0385C1318E30B004939D7 /* Test.cpp */; };
+		69C0386C1318E30B004939D7 /* TestDetails.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C0385D1318E30B004939D7 /* TestDetails.cpp */; };
+		69C0386D1318E30B004939D7 /* TestList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C0385E1318E30B004939D7 /* TestList.cpp */; };
+		69C0386E1318E30B004939D7 /* TestReporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C0385F1318E30B004939D7 /* TestReporter.cpp */; };
+		69C0386F1318E30B004939D7 /* TestReporterStdout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038601318E30B004939D7 /* TestReporterStdout.cpp */; };
+		69C038701318E30B004939D7 /* TestResults.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038611318E30B004939D7 /* TestResults.cpp */; };
+		69C038711318E30B004939D7 /* TestRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038621318E30B004939D7 /* TestRunner.cpp */; };
+		69C038721318E30B004939D7 /* TimeConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038631318E30B004939D7 /* TimeConstraint.cpp */; };
+		69C038731318E30B004939D7 /* XmlTestReporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038641318E30B004939D7 /* XmlTestReporter.cpp */; };
+		69C038761318E315004939D7 /* SignalTranslator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038741318E315004939D7 /* SignalTranslator.cpp */; };
+		69C038771318E315004939D7 /* TimeHelpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038751318E315004939D7 /* TimeHelpers.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69C037831318D9B6004939D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 698F0C090D4D58A6006DA4CC;
+			remoteInfo = "jbots-test";
+		};
+		69C037EF1318DE03004939D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69C037D81318DDE2004939D7;
+			remoteInfo = "unittest++";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		698F0C0A0D4D58A6006DA4CC /* jbots-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "jbots-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C037D91318DDE2004939D7 /* libunittest++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libunittest++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C038471318E2AA004939D7 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = source/server/game.cpp; sourceTree = "<group>"; };
+		69C0384A1318E2C1004939D7 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = source/common/Main.cpp; sourceTree = "<group>"; };
+		69C038561318E30B004939D7 /* AssertException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AssertException.cpp; path = "../lib/Contrib/UnitTest++/AssertException.cpp"; sourceTree = SOURCE_ROOT; };
+		69C038571318E30B004939D7 /* Checks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Checks.cpp; path = "../lib/Contrib/UnitTest++/Checks.cpp"; sourceTree = SOURCE_ROOT; };
+		69C038581318E30B004939D7 /* DeferredTestReporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DeferredTestReporter.cpp; path = "../lib/Contrib/UnitTest++/DeferredTestReporter.cpp"; sourceTree = SOURCE_ROOT; };
+		69C038591318E30B004939D7 /* DeferredTestResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DeferredTestResult.cpp; path = "../lib/Contrib/UnitTest++/DeferredTestResult.cpp"; sourceTree = SOURCE_ROOT; };
+		69C0385A1318E30B004939D7 /* MemoryOutStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryOutStream.cpp; path = "../lib/Contrib/UnitTest++/MemoryOutStream.cpp"; sourceTree = SOURCE_ROOT; };
+		69C0385B1318E30B004939D7 /* ReportAssert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ReportAssert.cpp; path = "../lib/Contrib/UnitTest++/ReportAssert.cpp"; sourceTree = SOURCE_ROOT; };
+		69C0385C1318E30B004939D7 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Test.cpp; path = "../lib/Contrib/UnitTest++/Test.cpp"; sourceTree = SOURCE_ROOT; };
+		69C0385D1318E30B004939D7 /* TestDetails.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestDetails.cpp; path = "../lib/Contrib/UnitTest++/TestDetails.cpp"; sourceTree = SOURCE_ROOT; };
+		69C0385E1318E30B004939D7 /* TestList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestList.cpp; path = "../lib/Contrib/UnitTest++/TestList.cpp"; sourceTree = SOURCE_ROOT; };
+		69C0385F1318E30B004939D7 /* TestReporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestReporter.cpp; path = "../lib/Contrib/UnitTest++/TestReporter.cpp"; sourceTree = SOURCE_ROOT; };
+		69C038601318E30B004939D7 /* TestReporterStdout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestReporterStdout.cpp; path = "../lib/Contrib/UnitTest++/TestReporterStdout.cpp"; sourceTree = SOURCE_ROOT; };
+		69C038611318E30B004939D7 /* TestResults.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestResults.cpp; path = "../lib/Contrib/UnitTest++/TestResults.cpp"; sourceTree = SOURCE_ROOT; };
+		69C038621318E30B004939D7 /* TestRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRunner.cpp; path = "../lib/Contrib/UnitTest++/TestRunner.cpp"; sourceTree = SOURCE_ROOT; };
+		69C038631318E30B004939D7 /* TimeConstraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TimeConstraint.cpp; path = "../lib/Contrib/UnitTest++/TimeConstraint.cpp"; sourceTree = SOURCE_ROOT; };
+		69C038641318E30B004939D7 /* XmlTestReporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XmlTestReporter.cpp; path = "../lib/Contrib/UnitTest++/XmlTestReporter.cpp"; sourceTree = SOURCE_ROOT; };
+		69C038741318E315004939D7 /* SignalTranslator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SignalTranslator.cpp; path = "../lib/Contrib/UnitTest++/Posix/SignalTranslator.cpp"; sourceTree = SOURCE_ROOT; };
+		69C038751318E315004939D7 /* TimeHelpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TimeHelpers.cpp; path = "../lib/Contrib/UnitTest++/Posix/TimeHelpers.cpp"; sourceTree = SOURCE_ROOT; };
+		8DD76F6C0486A84900D96B5E /* jbots-server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "jbots-server"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		698F0C080D4D58A6006DA4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C037F91318DE7B004939D7 /* libunittest++.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69C037D71318DDE2004939D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* Bots */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				69B3492D0D4C80AF00D4C136 /* Test */,
+				69C613220D810AEA009E6F46 /* Contrib */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = Bots;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				69C038471318E2AA004939D7 /* game.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* jbots-server */,
+				698F0C0A0D4D58A6006DA4CC /* jbots-test */,
+				69C037D91318DDE2004939D7 /* libunittest++.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69B3492D0D4C80AF00D4C136 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				69C0384A1318E2C1004939D7 /* Main.cpp */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		69C037A31318DC92004939D7 /* UnitTest++ */ = {
+			isa = PBXGroup;
+			children = (
+				69C038561318E30B004939D7 /* AssertException.cpp */,
+				69C038571318E30B004939D7 /* Checks.cpp */,
+				69C038581318E30B004939D7 /* DeferredTestReporter.cpp */,
+				69C038591318E30B004939D7 /* DeferredTestResult.cpp */,
+				69C0385A1318E30B004939D7 /* MemoryOutStream.cpp */,
+				69C0385B1318E30B004939D7 /* ReportAssert.cpp */,
+				69C038741318E315004939D7 /* SignalTranslator.cpp */,
+				69C0385C1318E30B004939D7 /* Test.cpp */,
+				69C0385D1318E30B004939D7 /* TestDetails.cpp */,
+				69C0385E1318E30B004939D7 /* TestList.cpp */,
+				69C0385F1318E30B004939D7 /* TestReporter.cpp */,
+				69C038601318E30B004939D7 /* TestReporterStdout.cpp */,
+				69C038611318E30B004939D7 /* TestResults.cpp */,
+				69C038621318E30B004939D7 /* TestRunner.cpp */,
+				69C038631318E30B004939D7 /* TimeConstraint.cpp */,
+				69C038751318E315004939D7 /* TimeHelpers.cpp */,
+				69C038641318E30B004939D7 /* XmlTestReporter.cpp */,
+			);
+			name = "UnitTest++";
+			sourceTree = "<group>";
+		};
+		69C613220D810AEA009E6F46 /* Contrib */ = {
+			isa = PBXGroup;
+			children = (
+				69C037A31318DC92004939D7 /* UnitTest++ */,
+			);
+			name = Contrib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		69C037D51318DDE2004939D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		698F0C090D4D58A6006DA4CC /* jbots-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 698F0C2B0D4D5929006DA4CC /* Build configuration list for PBXNativeTarget "jbots-test" */;
+			buildPhases = (
+				698F0C070D4D58A6006DA4CC /* Sources */,
+				698F0C080D4D58A6006DA4CC /* Frameworks */,
+				698F0C7A0D4D9735006DA4CC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69C037F01318DE03004939D7 /* PBXTargetDependency */,
+			);
+			name = "jbots-test";
+			productName = "jbots-test";
+			productReference = 698F0C0A0D4D58A6006DA4CC /* jbots-test */;
+			productType = "com.apple.product-type.tool";
+		};
+		69C037D81318DDE2004939D7 /* unittest++ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69C037F61318DE32004939D7 /* Build configuration list for PBXNativeTarget "unittest++" */;
+			buildPhases = (
+				69C037D51318DDE2004939D7 /* Headers */,
+				69C037D61318DDE2004939D7 /* Sources */,
+				69C037D71318DDE2004939D7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "unittest++";
+			productName = "unittest++";
+			productReference = 69C037D91318DDE2004939D7 /* libunittest++.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8DD76F620486A84900D96B5E /* jbots-server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "jbots-server" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69C037841318D9B6004939D7 /* PBXTargetDependency */,
+			);
+			name = "jbots-server";
+			productInstallPath = "$(HOME)/bin";
+			productName = Bots;
+			productReference = 8DD76F6C0486A84900D96B5E /* jbots-server */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "JBOTS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* Bots */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* jbots-server */,
+				698F0C090D4D58A6006DA4CC /* jbots-test */,
+				69C037D81318DDE2004939D7 /* unittest++ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		698F0C7A0D4D9735006DA4CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/jbots-test",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$BUILT_PRODUCTS_DIR/jbots-test";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		698F0C070D4D58A6006DA4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C0384C1318E2C1004939D7 /* Main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69C037D61318DDE2004939D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C038651318E30B004939D7 /* AssertException.cpp in Sources */,
+				69C038661318E30B004939D7 /* Checks.cpp in Sources */,
+				69C038671318E30B004939D7 /* DeferredTestReporter.cpp in Sources */,
+				69C038681318E30B004939D7 /* DeferredTestResult.cpp in Sources */,
+				69C038691318E30B004939D7 /* MemoryOutStream.cpp in Sources */,
+				69C0386A1318E30B004939D7 /* ReportAssert.cpp in Sources */,
+				69C0386B1318E30B004939D7 /* Test.cpp in Sources */,
+				69C0386C1318E30B004939D7 /* TestDetails.cpp in Sources */,
+				69C0386D1318E30B004939D7 /* TestList.cpp in Sources */,
+				69C0386E1318E30B004939D7 /* TestReporter.cpp in Sources */,
+				69C0386F1318E30B004939D7 /* TestReporterStdout.cpp in Sources */,
+				69C038701318E30B004939D7 /* TestResults.cpp in Sources */,
+				69C038711318E30B004939D7 /* TestRunner.cpp in Sources */,
+				69C038721318E30B004939D7 /* TimeConstraint.cpp in Sources */,
+				69C038731318E30B004939D7 /* XmlTestReporter.cpp in Sources */,
+				69C038761318E315004939D7 /* SignalTranslator.cpp in Sources */,
+				69C038771318E315004939D7 /* TimeHelpers.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C038481318E2AA004939D7 /* game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69C037841318D9B6004939D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 698F0C090D4D58A6006DA4CC /* jbots-test */;
+			targetProxy = 69C037831318D9B6004939D7 /* PBXContainerItemProxy */;
+		};
+		69C037F01318DE03004939D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69C037D81318DDE2004939D7 /* unittest++ */;
+			targetProxy = 69C037EF1318DE03004939D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_MODEL_TUNING = G5;
+				PRODUCT_NAME = "jbots-server";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_MODEL_TUNING = G5;
+				PRODUCT_NAME = "jbots-server";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../lib";
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../lib";
+			};
+			name = Release;
+		};
+		698F0C0C0D4D58A7006DA4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = "";
+				PRODUCT_NAME = "jbots-test";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		698F0C0D0D4D58A7006DA4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = "";
+				PRODUCT_NAME = "jbots-test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		69C037DA1318DDE2004939D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = "unittest++";
+			};
+			name = Debug;
+		};
+		69C037DB1318DDE2004939D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = "unittest++";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "jbots-server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "JBOTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		698F0C2B0D4D5929006DA4CC /* Build configuration list for PBXNativeTarget "jbots-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				698F0C0C0D4D58A7006DA4CC /* Debug */,
+				698F0C0D0D4D58A7006DA4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69C037F61318DE32004939D7 /* Build configuration list for PBXNativeTarget "unittest++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69C037DA1318DDE2004939D7 /* Debug */,
+				69C037DB1318DDE2004939D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

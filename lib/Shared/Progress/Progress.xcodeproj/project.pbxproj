@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		693A121A0D6D425F00457CC4 /* UnitTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 693A120E0D6D420200457CC4 /* UnitTester.cpp */; };
+		699713920F676D0B0023FD74 /* libUnitTest++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 699713910F676D0B0023FD74 /* libUnitTest++.a */; };
+		699713FC0F6776220023FD74 /* Counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 699713FB0F6776220023FD74 /* Counter.cpp */; };
+		69F6E27E0F68DFAF009064B5 /* Counter.test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69F6E27D0F68DFAF009064B5 /* Counter.test.cpp */; };
+		69F6E2B40F68E199009064B5 /* ProgressBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69F6E2B30F68E199009064B5 /* ProgressBar.cpp */; };
+		69F6E2B60F68E1AF009064B5 /* ProgressBar.test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69F6E2B50F68E1AF009064B5 /* ProgressBar.test.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6906152D0F679A5600F8E1AB /* ProgressTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProgressTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		693A120E0D6D420200457CC4 /* UnitTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = UnitTester.cpp; sourceTree = "<group>"; };
+		699713910F676D0B0023FD74 /* libUnitTest++.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUnitTest++.a"; path = "../../Contrib/UnitTest++/libUnitTest++.a"; sourceTree = SOURCE_ROOT; };
+		699713FB0F6776220023FD74 /* Counter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Counter.cpp; sourceTree = "<group>"; };
+		69F6E27D0F68DFAF009064B5 /* Counter.test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Counter.test.cpp; sourceTree = "<group>"; };
+		69F6E2B30F68E199009064B5 /* ProgressBar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProgressBar.cpp; sourceTree = "<group>"; };
+		69F6E2B50F68E1AF009064B5 /* ProgressBar.test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProgressBar.test.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		693A12110D6D421F00457CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				699713920F676D0B0023FD74 /* libUnitTest++.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		693A12000D6D41D600457CC4 = {
+			isa = PBXGroup;
+			children = (
+				69F6E2730F68DE72009064B5 /* Shared */,
+				6997138D0F676CFD0023FD74 /* Unit Tests */,
+				693A12140D6D421F00457CC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		693A12140D6D421F00457CC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6906152D0F679A5600F8E1AB /* ProgressTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6997138D0F676CFD0023FD74 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				693A120E0D6D420200457CC4 /* UnitTester.cpp */,
+				69F6E27D0F68DFAF009064B5 /* Counter.test.cpp */,
+				69F6E2B50F68E1AF009064B5 /* ProgressBar.test.cpp */,
+				699713910F676D0B0023FD74 /* libUnitTest++.a */,
+			);
+			name = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		69F6E2730F68DE72009064B5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				69F6E2740F68DE85009064B5 /* Progress */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		69F6E2740F68DE85009064B5 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				699713FB0F6776220023FD74 /* Counter.cpp */,
+				69F6E2B30F68E199009064B5 /* ProgressBar.cpp */,
+			);
+			name = Progress;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		693A12120D6D421F00457CC4 /* ProgressTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 693A12180D6D421F00457CC4 /* Build configuration list for PBXNativeTarget "ProgressTest" */;
+			buildPhases = (
+				693A12100D6D421F00457CC4 /* Sources */,
+				693A12110D6D421F00457CC4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressTest;
+			productName = ProgressTest;
+			productReference = 6906152D0F679A5600F8E1AB /* ProgressTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		693A12020D6D41D600457CC4 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 693A12050D6D41D600457CC4 /* Build configuration list for PBXProject "Progress" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 693A12000D6D41D600457CC4;
+			productRefGroup = 693A12140D6D421F00457CC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				693A12120D6D421F00457CC4 /* ProgressTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		693A12100D6D421F00457CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693A121A0D6D425F00457CC4 /* UnitTester.cpp in Sources */,
+				699713FC0F6776220023FD74 /* Counter.cpp in Sources */,
+				69F6E27E0F68DFAF009064B5 /* Counter.test.cpp in Sources */,
+				69F6E2B40F68E199009064B5 /* ProgressBar.cpp in Sources */,
+				69F6E2B60F68E1AF009064B5 /* ProgressBar.test.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		693A12030D6D41D600457CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		693A12040D6D41D600457CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		693A12160D6D421F00457CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../../lib;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"../../../lib/Contrib/UnitTest++/",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../lib/Contrib/UnitTest++.old\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = ProgressTest;
+				USER_HEADER_SEARCH_PATHS = "";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		693A12170D6D421F00457CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../../lib;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"../../../lib/Contrib/UnitTest++/",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../lib/Contrib/UnitTest++.old\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = ProgressTest;
+				USER_HEADER_SEARCH_PATHS = "";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		693A12050D6D41D600457CC4 /* Build configuration list for PBXProject "Progress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				693A12030D6D41D600457CC4 /* Debug */,
+				693A12040D6D41D600457CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		693A12180D6D421F00457CC4 /* Build configuration list for PBXNativeTarget "ProgressTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				693A12160D6D421F00457CC4 /* Debug */,
+				693A12170D6D421F00457CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 693A12020D6D41D600457CC4 /* Project object */;
+}
