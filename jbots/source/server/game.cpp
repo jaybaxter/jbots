@@ -1,6 +1,12 @@
+// Standard Library
 #include <iostream>
 #include <string>
 #include <vector>
+
+// Qt library
+//#include <QApplication>
+//#include <QtCore>
+#include <QtGui>
 
 class Bot {
 public:
@@ -15,7 +21,7 @@ public:
 	virtual void run() = 0;
 
 private:
-	Name name_;	
+	Name name_;
 };
 
 class TestBot : public Bot {
@@ -64,10 +70,40 @@ private:
 	Arena* arena_;
 };
 
-int main() {
+class MainWindow : public QWidget {
+public:
+	MainWindow( QWidget* parent = 0 );
+};
+
+MainWindow::MainWindow( QWidget* parent )
+	: QWidget( parent )
+{
+	setFixedSize(648, 400);
+	
+/*	QPushButton *quit = new QPushButton( tr( "Quit" ), this);
+	quit->setGeometry( 62, 40, 75, 30 );
+	quit->setFont( QFont( "Times", 18, QFont::Bold ) );
+	
+	connect( quit, SIGNAL( clicked() ), qApp, SLOT( quit() ) );
+ */
+}
+
+int main( int argc, char** argv ) {
+	QApplication app( argc, argv );
+	MainWindow mainWindow;;
+	mainWindow.show();
+
+#if 0
+	QTextEdit textEdit;
+	textEdit.setReadOnly( true );
+	textEdit.show();
+#endif
+	
 	Match match;
 	match.add( new TestBot( "test1" ) );
 	match.add( new TestBot( "test2" ) );
 	match.add( new Arena() );
 	match.display();
+	
+	return app.exec();
 }

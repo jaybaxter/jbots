@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		696A505E131A3F49005349E6 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696A505D131A3F49005349E6 /* QtCore.framework */; };
+		696A5060131A3F49005349E6 /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696A505F131A3F49005349E6 /* QtGui.framework */; };
 		69C037F91318DE7B004939D7 /* libunittest++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C037D91318DDE2004939D7 /* libunittest++.a */; };
 		69C038481318E2AA004939D7 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C038471318E2AA004939D7 /* game.cpp */; };
 		69C0384C1318E2C1004939D7 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69C0384A1318E2C1004939D7 /* Main.cpp */; };
@@ -59,6 +61,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		696A505D131A3F49005349E6 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Library/Frameworks/QtCore.framework; sourceTree = "<absolute>"; };
+		696A505F131A3F49005349E6 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Library/Frameworks/QtGui.framework; sourceTree = "<absolute>"; };
 		698F0C0A0D4D58A6006DA4CC /* jbots-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "jbots-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C037D91318DDE2004939D7 /* libunittest++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libunittest++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C038471318E2AA004939D7 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = source/server/game.cpp; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696A505E131A3F49005349E6 /* QtCore.framework in Frameworks */,
+				696A5060131A3F49005349E6 /* QtGui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +121,7 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				69B3492D0D4C80AF00D4C136 /* Test */,
 				69C613220D810AEA009E6F46 /* Contrib */,
+				696A5061131A3F4E005349E6 /* Frameworks */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
 			name = Bots;
@@ -136,6 +143,15 @@
 				69C037D91318DDE2004939D7 /* libunittest++.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		696A5061131A3F4E005349E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				696A505D131A3F49005349E6 /* QtCore.framework */,
+				696A505F131A3F49005349E6 /* QtGui.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		69B3492D0D4C80AF00D4C136 /* Test */ = {
@@ -351,6 +367,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_MODEL_TUNING = G5;
 				PRODUCT_NAME = "jbots-server";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../lib /Library/Frameworks/QtCore.framework/Headers /Library/Frameworks/QtGui.framework/Headers";
 				ZERO_LINK = NO;
 			};
 			name = Debug;
@@ -361,6 +378,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_MODEL_TUNING = G5;
 				PRODUCT_NAME = "jbots-server";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../lib /Library/Frameworks/QtCore.framework/Headers /Library/Frameworks/QtGui.framework/Headers";
 				ZERO_LINK = NO;
 			};
 			name = Release;
